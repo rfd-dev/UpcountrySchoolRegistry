@@ -7,6 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpcountrySchoolRegistry.API
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcountrySchoolRegistry.Commons", "UpcountrySchoolRegistry.Commons\UpcountrySchoolRegistry.Commons.csproj", "{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.API", "1.API", "{D8BD27FF-51D6-4E0B-826E-C6202A469907}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Infra", "2.Infra", "{38F98CB4-C957-4FB5-9AD6-858D25C2998B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Business", "3.Business", "{F2832892-91E1-40C6-9275-1005897772B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{349FA567-FEEB-4330-BACC-46921D7202BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcountrySchoolRegistry.Business", "UpcountrySchoolRegistry.Business\UpcountrySchoolRegistry.Business.csproj", "{F5187B6D-66F6-4202-B6D6-CF6559751957}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +31,18 @@ Global
 		{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5187B6D-66F6-4202-B6D6-CF6559751957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5187B6D-66F6-4202-B6D6-CF6559751957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5187B6D-66F6-4202-B6D6-CF6559751957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5187B6D-66F6-4202-B6D6-CF6559751957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9C5AD0A-51F9-4CAA-AB95-E2F06F2DA80D} = {D8BD27FF-51D6-4E0B-826E-C6202A469907}
+		{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21} = {349FA567-FEEB-4330-BACC-46921D7202BB}
+		{F5187B6D-66F6-4202-B6D6-CF6559751957} = {F2832892-91E1-40C6-9275-1005897772B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A5D119A-5A8B-41CB-8141-46409501A563}
