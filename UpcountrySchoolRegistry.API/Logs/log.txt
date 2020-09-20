@@ -1,0 +1,120 @@
+2020-09-20 18:31:49.283 -03:00 [DBG] Hosting starting
+2020-09-20 18:31:49.872 -03:00 [DBG] Loaded hosting startup assembly UpcountrySchoolRegistry.API
+2020-09-20 18:31:49.897 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-20 18:31:49.917 -03:00 [INF] Hosting environment: Development
+2020-09-20 18:31:49.921 -03:00 [INF] Content root path: D:\Users\rafael.almeida\Source\Repos\UpcountrySchoolRegistry\UpcountrySchoolRegistry.API
+2020-09-20 18:31:49.925 -03:00 [DBG] Hosting started
+2020-09-20 18:31:50.000 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/index.html  
+2020-09-20 18:31:50.015 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-09-20 18:31:50.322 -03:00 [INF] HTTP GET /index.html responded 200 in 294.6241 ms
+2020-09-20 18:31:50.343 -03:00 [INF] Request finished in 346.5696ms 200 text/html;charset=utf-8
+2020-09-20 18:31:50.524 -03:00 [DBG] Connection ID "18014398519682531336" disconnecting.
+2020-09-20 18:31:50.576 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/swagger-ui.css  
+2020-09-20 18:31:50.751 -03:00 [DBG] Connection ID "18086456109425491997" disconnecting.
+2020-09-20 18:31:50.775 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/favicon-32x32.png  
+2020-09-20 18:31:50.648 -03:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.StreamCopyOperationInternal.CopyToAsync(Stream source, Stream destination, Nullable`1 count, Int32 bufferSize, CancellationToken cancel)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2020-09-20 18:31:50.784 -03:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.StreamCopyOperationInternal.CopyToAsync(Stream source, Stream destination, Nullable`1 count, Int32 bufferSize, CancellationToken cancel)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2020-09-20 18:31:50.863 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-09-20 18:31:50.863 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-09-20 18:31:50.872 -03:00 [INF] HTTP GET /swagger-ui.css responded 200 in 287.3808 ms
+2020-09-20 18:31:50.872 -03:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 88.9116 ms
+2020-09-20 18:31:50.886 -03:00 [INF] Request finished in 124.124ms 0 image/png
+2020-09-20 18:31:50.890 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/swagger/v1/swagger.json  
+2020-09-20 18:31:50.886 -03:00 [INF] Request finished in 310.7357ms 0 text/css
+2020-09-20 18:31:51.270 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 351.2415 ms
+2020-09-20 18:31:51.279 -03:00 [INF] Request finished in 391.878ms 200 application/json;charset=utf-8
+2020-09-20 18:31:57.124 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/WeatherForecast  
+2020-09-20 18:31:57.136 -03:00 [DBG] The request path /WeatherForecast does not match a supported file type
+2020-09-20 18:31:57.218 -03:00 [DBG] 1 candidate(s) found for the request path '/WeatherForecast'
+2020-09-20 18:31:57.228 -03:00 [DBG] Endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast'
+2020-09-20 18:31:57.237 -03:00 [DBG] Request matched endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)'
+2020-09-20 18:31:57.243 -03:00 [INF] Executing endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)'
+2020-09-20 18:31:57.269 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-09-20 18:31:57.309 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UpcountrySchoolRegistry.API.WeatherForecast] Get() on controller UpcountrySchoolRegistry.API.Controllers.WeatherForecastController (UpcountrySchoolRegistry.API).
+2020-09-20 18:31:57.317 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-20 18:31:57.321 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-20 18:31:57.325 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-20 18:31:57.333 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-20 18:31:57.337 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-20 18:31:57.342 -03:00 [DBG] Executing controller factory for controller UpcountrySchoolRegistry.API.Controllers.WeatherForecastController (UpcountrySchoolRegistry.API)
+2020-09-20 18:31:57.350 -03:00 [DBG] Executed controller factory for controller UpcountrySchoolRegistry.API.Controllers.WeatherForecastController (UpcountrySchoolRegistry.API)
+2020-09-20 18:31:57.355 -03:00 [INF] Get called
+2020-09-20 18:31:57.365 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-20 18:31:57.372 -03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-09-20 18:31:57.376 -03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-09-20 18:31:57.382 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-20 18:31:57.386 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-20 18:31:57.390 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-20 18:31:57.393 -03:00 [INF] Executing ObjectResult, writing value of type 'UpcountrySchoolRegistry.API.WeatherForecast[]'.
+2020-09-20 18:31:57.420 -03:00 [INF] Executed action UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API) in 67.6224ms
+2020-09-20 18:31:57.423 -03:00 [INF] Executed endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)'
+2020-09-20 18:31:57.429 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 296.6592 ms
+2020-09-20 18:31:57.434 -03:00 [INF] Request finished in 310.367ms 200 application/json; charset=utf-8
+2020-09-20 18:33:32.077 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-20 18:33:32.143 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/index.html  
+2020-09-20 18:33:32.177 -03:00 [INF] Hosting environment: Development
+2020-09-20 18:33:32.180 -03:00 [INF] Content root path: D:\Users\rafael.almeida\Source\Repos\UpcountrySchoolRegistry\UpcountrySchoolRegistry.API
+2020-09-20 18:33:32.424 -03:00 [INF] HTTP GET /index.html responded 200 in 232.9461 ms
+2020-09-20 18:33:32.443 -03:00 [INF] Request finished in 305.2519ms 200 text/html;charset=utf-8
+2020-09-20 18:33:32.524 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/swagger-ui.css  
+2020-09-20 18:33:32.620 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-09-20 18:33:32.627 -03:00 [INF] HTTP GET /swagger-ui.css responded 200 in 89.0525 ms
+2020-09-20 18:33:32.632 -03:00 [INF] Request finished in 108.2651ms 0 text/css
+2020-09-20 18:33:32.734 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/favicon-32x32.png  
+2020-09-20 18:33:32.742 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-09-20 18:33:32.745 -03:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 7.2634 ms
+2020-09-20 18:33:32.748 -03:00 [INF] Request finished in 14.8087ms 0 image/png
+2020-09-20 18:33:32.814 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/swagger/v1/swagger.json  
+2020-09-20 18:33:33.052 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 234.0949 ms
+2020-09-20 18:33:33.068 -03:00 [INF] Request finished in 254.2459ms 200 application/json;charset=utf-8
+2020-09-20 18:33:38.130 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/WeatherForecast  
+2020-09-20 18:33:38.195 -03:00 [INF] Executing endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)'
+2020-09-20 18:33:38.234 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UpcountrySchoolRegistry.API.WeatherForecast] Get() on controller UpcountrySchoolRegistry.API.Controllers.WeatherForecastController (UpcountrySchoolRegistry.API).
+2020-09-20 18:33:38.240 -03:00 [INF] Get called
+2020-09-20 18:33:38.252 -03:00 [INF] Executing ObjectResult, writing value of type 'UpcountrySchoolRegistry.API.WeatherForecast[]'.
+2020-09-20 18:33:38.273 -03:00 [INF] Executed action UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API) in 28.8018ms
+2020-09-20 18:33:38.276 -03:00 [INF] Executed endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)'
+2020-09-20 18:33:38.280 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 144.2113 ms
+2020-09-20 18:33:38.286 -03:00 [INF] Request finished in 156.5057ms 200 application/json; charset=utf-8
+2020-09-20 18:34:15.117 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-20 18:34:15.212 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/index.html  
+2020-09-20 18:34:15.237 -03:00 [INF] Hosting environment: Development
+2020-09-20 18:34:15.243 -03:00 [INF] Content root path: D:\Users\rafael.almeida\Source\Repos\UpcountrySchoolRegistry\UpcountrySchoolRegistry.API
+2020-09-20 18:34:15.511 -03:00 [INF] HTTP GET /index.html responded 200 in 254.6461 ms
+2020-09-20 18:34:15.530 -03:00 [INF] Request finished in 350.3879ms 200 text/html;charset=utf-8
+2020-09-20 18:34:15.666 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/swagger-ui.css  
+2020-09-20 18:34:15.738 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-09-20 18:34:15.742 -03:00 [INF] HTTP GET /swagger-ui.css responded 200 in 68.5131 ms
+2020-09-20 18:34:15.746 -03:00 [INF] Request finished in 80.5348ms 0 text/css
+2020-09-20 18:34:15.896 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/favicon-32x32.png  
+2020-09-20 18:34:15.910 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-09-20 18:34:15.916 -03:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 10.2384 ms
+2020-09-20 18:34:15.925 -03:00 [INF] Request finished in 29.1835ms 0 image/png
+2020-09-20 18:34:16.015 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/swagger/v1/swagger.json  
+2020-09-20 18:34:16.272 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 245.9804 ms
+2020-09-20 18:34:16.300 -03:00 [INF] Request finished in 285.4068ms 200 application/json;charset=utf-8
+2020-09-20 18:34:21.682 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44314/WeatherForecast  
+2020-09-20 18:34:21.763 -03:00 [INF] Executing endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)'
+2020-09-20 18:34:21.817 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UpcountrySchoolRegistry.API.WeatherForecast] Get() on controller UpcountrySchoolRegistry.API.Controllers.WeatherForecastController (UpcountrySchoolRegistry.API).
+2020-09-20 18:34:21.825 -03:00 [INF] Get called
+2020-09-20 18:34:21.839 -03:00 [INF] Executing ObjectResult, writing value of type 'UpcountrySchoolRegistry.API.WeatherForecast[]'.
+2020-09-20 18:34:21.884 -03:00 [INF] Executed action UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API) in 52.3371ms
+2020-09-20 18:34:21.887 -03:00 [INF] Executed endpoint 'UpcountrySchoolRegistry.API.Controllers.WeatherForecastController.Get (UpcountrySchoolRegistry.API)'
+2020-09-20 18:34:21.895 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 206.7284 ms
+2020-09-20 18:34:21.898 -03:00 [INF] Request finished in 216.8293ms 200 application/json; charset=utf-8
+2020-09-20 18:37:09.918 -03:00 [INF] HTTP GET /index.html responded 200 in 255.1956 ms
+2020-09-20 18:37:10.106 -03:00 [INF] HTTP GET /swagger-ui.css responded 200 in 128.5923 ms
+2020-09-20 18:37:10.229 -03:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 4.3483 ms
+2020-09-20 18:37:10.555 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 253.2440 ms
+2020-09-20 18:37:16.880 -03:00 [INF] Get called
+2020-09-20 18:37:16.904 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 122.0955 ms

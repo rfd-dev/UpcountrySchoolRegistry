@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using UpcountrySchoolRegistry.API.Helpers;
 using UpcountrySchoolRegistry.Commons.Settings;
 
@@ -45,7 +46,8 @@ namespace UpcountrySchoolRegistry.API
                 app.UseDeveloperExceptionPage();
             }
 
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSerilogRequestLogging();
+            
             app.UseSwagger();
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
