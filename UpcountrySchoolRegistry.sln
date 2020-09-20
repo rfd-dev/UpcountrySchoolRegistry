@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{349F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcountrySchoolRegistry.Business", "UpcountrySchoolRegistry.Business\UpcountrySchoolRegistry.Business.csproj", "{F5187B6D-66F6-4202-B6D6-CF6559751957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcountrySchoolRegistry.Repository", "UpcountrySchoolRegistry.Repository\UpcountrySchoolRegistry.Repository.csproj", "{D318E926-99FC-4817-86B4-D5077CE98A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{F5187B6D-66F6-4202-B6D6-CF6559751957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5187B6D-66F6-4202-B6D6-CF6559751957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5187B6D-66F6-4202-B6D6-CF6559751957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D318E926-99FC-4817-86B4-D5077CE98A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D318E926-99FC-4817-86B4-D5077CE98A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D318E926-99FC-4817-86B4-D5077CE98A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D318E926-99FC-4817-86B4-D5077CE98A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{E9C5AD0A-51F9-4CAA-AB95-E2F06F2DA80D} = {D8BD27FF-51D6-4E0B-826E-C6202A469907}
 		{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21} = {349FA567-FEEB-4330-BACC-46921D7202BB}
 		{F5187B6D-66F6-4202-B6D6-CF6559751957} = {F2832892-91E1-40C6-9275-1005897772B2}
+		{D318E926-99FC-4817-86B4-D5077CE98A5A} = {38F98CB4-C957-4FB5-9AD6-858D25C2998B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A5D119A-5A8B-41CB-8141-46409501A563}
