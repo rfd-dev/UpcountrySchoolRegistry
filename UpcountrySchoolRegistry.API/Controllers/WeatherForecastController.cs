@@ -23,6 +23,22 @@ namespace UpcountrySchoolRegistry.API.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Teste de descrição do GET
+        /// </summary>
+        /// <remarks>
+        /// Utilize essa chamada quando quiser pegar a informção sobre o tempo.
+        /// Sample request:
+        ///
+        ///     POST /Todo
+        ///     {
+        ///        "id": 1,
+        ///        "name": "Item1",
+        ///        "isComplete": true
+        ///     }
+        ///
+        /// </remarks>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

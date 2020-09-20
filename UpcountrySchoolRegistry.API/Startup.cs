@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +12,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
+using UpcountrySchoolRegistry.API.Helpers;
+using UpcountrySchoolRegistry.Commons.Settings;
 
 namespace UpcountrySchoolRegistry.API
 {
@@ -25,7 +30,11 @@ namespace UpcountrySchoolRegistry.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Infraestructure e App settings
+            var swaggerOptions = Configuration.GetSection(SwaggerOptions.Key).Get<SwaggerOptions>();
+
             services.AddControllers();
+            services.CustomizeSwaggerGen(swaggerOptions);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +44,17 @@ namespace UpcountrySchoolRegistry.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cadastro Escolar V1");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseHttpsRedirection();
 
