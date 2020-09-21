@@ -388,3 +388,7 @@ System.Object -> UpcountrySchoolRegistry.Business.Domain.School
 2020-09-21 01:44:41.185 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 182.2456 ms
 2020-09-21 01:45:06.052 -03:00 [INF]  escola cadastrado com o ID 2 foi removido com sucesso
 2020-09-21 01:45:06.066 -03:00 [INF] HTTP DELETE /api/School/2 responded 200 in 1898.1153 ms
+2020-09-21 01:52:41.785 -03:00 [INF] HTTP GET /index.html responded 200 in 188.1865 ms
+2020-09-21 01:52:42.309 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 181.6604 ms
+2020-09-21 02:05:13.728 -03:00 [INF] HTTP GET /index.html responded 200 in 201.0952 ms
+2020-09-21 02:05:14.344 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 272.5016 ms
