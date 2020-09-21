@@ -384,3 +384,7 @@ System.Object -> UpcountrySchoolRegistry.Business.Domain.School
 2020-09-21 01:43:09.589 -03:00 [INF] HTTP PUT /api/School responded 200 in 1866.0587 ms
 2020-09-21 01:43:43.215 -03:00 [INF] Dados do colégio cadastrado com o ID 3 atualizados com sucesso.
 2020-09-21 01:43:43.218 -03:00 [INF] HTTP PUT /api/School responded 200 in 73.5736 ms
+2020-09-21 01:44:40.698 -03:00 [INF] HTTP GET /index.html responded 200 in 172.4247 ms
+2020-09-21 01:44:41.185 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 182.2456 ms
+2020-09-21 01:45:06.052 -03:00 [INF]  colégio cadastrado com o ID 2 foi removido com sucesso
+2020-09-21 01:45:06.066 -03:00 [INF] HTTP DELETE /api/School/2 responded 200 in 1898.1153 ms

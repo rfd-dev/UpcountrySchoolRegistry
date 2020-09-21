@@ -123,26 +123,26 @@ namespace UpcountrySchoolRegistry.API.Controllers
             return Ok();
         }
 
-        ///// <summary>
-        ///// Remove um cadastro de escóla.
-        ///// </summary>
-        ///// <remarks>
-        ///// Utilize essa chamada para remover os dados de um registro de colégio.
-        ///// 
-        ///// ATENÇÃO! Esse comando não será executado se o colégio possuir turmas cadastradas.
-        ///// 
-        ///// 
-        ///// Sample request:
-        /////
-        /////     DELETE /school/1
-        /////
-        ///// </remarks>     
-        //[HttpGet("{id}")]
-        //[Consumes("application/Json")]
-        //public async Task<OkResult> DeleteSchool(int id)
-        //{
-        //    await this._schoolServices.DeleteAsync(id);
-        //    return Ok();
-        //}
+        /// <summary>
+        /// Remove um cadastro de escóla.
+        /// </summary>
+        /// <remarks>
+        /// Utilize essa chamada para remover os dados de um registro de colégio.
+        /// 
+        /// ATENÇÃO! Esse comando não será executado se o colégio possuir turmas cadastradas.
+        /// 
+        /// 
+        /// Sample request:
+        ///
+        ///     DELETE /school/1
+        ///
+        /// </remarks>     
+        [HttpDelete("{id}")]
+        [Consumes("application/Json")]
+        public async Task<OkResult> DeleteSchool(int id)
+        {
+            await this._schoolServices.DeleteAsync(id);
+            return Ok();
+        }
     }
 }
