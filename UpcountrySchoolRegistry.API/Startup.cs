@@ -34,7 +34,7 @@ namespace UpcountrySchoolRegistry.API
             var swaggerOptions = Configuration.GetSection(SwaggerOptions.Key).Get<SwaggerOptions>();
 
             services.AddControllers();
-            services.CustomizeSwaggerGen(swaggerOptions);
+            services.CustomizeSwaggerGen(swaggerOptions);            
             services.ConfigureMapper();
             services.ConfigureBusinessServices(Configuration);
         }
@@ -45,6 +45,7 @@ namespace UpcountrySchoolRegistry.API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
             }
 
             app.UseSerilogRequestLogging();

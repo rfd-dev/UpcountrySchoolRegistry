@@ -13,7 +13,6 @@ using UpcountrySchoolRegistry.Business.Domain;
 namespace UpcountrySchoolRegistry.API.Controllers
 {
     [Route("api/[controller]")]
-    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class SchoolController : ControllerBase
     {
