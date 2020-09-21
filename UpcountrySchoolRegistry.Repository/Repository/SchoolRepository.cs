@@ -9,12 +9,12 @@ namespace UpcountrySchoolRegistry.Repository.Repository
 {
     public class SchoolRepository : ISchoolRepository
     {
-        private readonly SchoolRegistryContext _context;
+        private readonly UpcountrySchoolRegistryContext _context;
 
         public IUnitOfWork UnitOfWork => _context;
         
         #region Constructor
-        public SchoolRepository(SchoolRegistryContext context)
+        public SchoolRepository(UpcountrySchoolRegistryContext context)
         {
             this._context = context;
         }

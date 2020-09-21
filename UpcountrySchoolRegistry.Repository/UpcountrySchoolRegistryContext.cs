@@ -9,12 +9,12 @@ using UpcountrySchoolRegistry.Repository.Configuration;
 
 namespace UpcountrySchoolRegistry.Repository
 {
-    public class SchoolRegistryContext : DbContext, IUnitOfWork
+    public class UpcountrySchoolRegistryContext : DbContext, IUnitOfWork
     {
         public DbSet<School> Schools { get; set; }
 
         #region Constructor
-        public SchoolRegistryContext(DbContextOptions<SchoolRegistryContext> options) : base(options) { }
+        public UpcountrySchoolRegistryContext(DbContextOptions<UpcountrySchoolRegistryContext> options) : base(options) { }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30114.128
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpcountrySchoolRegistry.API", "UpcountrySchoolRegistry.API\UpcountrySchoolRegistry.API.csproj", "{E9C5AD0A-51F9-4CAA-AB95-E2F06F2DA80D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcountrySchoolRegistry.Commons", "UpcountrySchoolRegistry.Commons\UpcountrySchoolRegistry.Commons.csproj", "{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpcountrySchoolRegistry.Commons", "UpcountrySchoolRegistry.Commons\UpcountrySchoolRegistry.Commons.csproj", "{C3D1C3BD-3C44-445D-AAB9-D60D8610BC21}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.API", "1.API", "{D8BD27FF-51D6-4E0B-826E-C6202A469907}"
 EndProject
@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Business", "3.Business", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{349FA567-FEEB-4330-BACC-46921D7202BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcountrySchoolRegistry.Business", "UpcountrySchoolRegistry.Business\UpcountrySchoolRegistry.Business.csproj", "{F5187B6D-66F6-4202-B6D6-CF6559751957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpcountrySchoolRegistry.Business", "UpcountrySchoolRegistry.Business\UpcountrySchoolRegistry.Business.csproj", "{F5187B6D-66F6-4202-B6D6-CF6559751957}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpcountrySchoolRegistry.Repository", "UpcountrySchoolRegistry.Repository\UpcountrySchoolRegistry.Repository.csproj", "{D318E926-99FC-4817-86B4-D5077CE98A5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpcountrySchoolRegistry.Repository", "UpcountrySchoolRegistry.Repository\UpcountrySchoolRegistry.Repository.csproj", "{D318E926-99FC-4817-86B4-D5077CE98A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
