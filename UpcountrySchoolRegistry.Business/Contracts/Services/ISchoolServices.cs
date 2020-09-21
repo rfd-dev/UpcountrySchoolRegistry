@@ -8,8 +8,8 @@ namespace UpcountrySchoolRegistry.Business.Contracts.Services
 {
     public interface ISchoolServices
     {
-        List<School> GetSchools(string filter);
-        School GetSchool(int id);
+        Task<List<School>> GetSchoolsAsync(string filter);
+        Task<School> GetSchoolAsync(int id);
         Task<School> AddAsync(School school);
         Task UpdateAsync(School school);
         Task DeleteAsync(int id);

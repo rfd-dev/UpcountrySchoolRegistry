@@ -37,10 +37,5 @@ namespace UpcountrySchoolRegistry.API.Helpers
                 c.IncludeXmlComments(xmlPath);
             });
         }
-
-        public static void ConfigureSerilog(this IServiceCollection services)
-        {
-
-        }
 	}
 }

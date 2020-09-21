@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UpcountrySchoolRegistry.Business.Contracts.Services;
+using UpcountrySchoolRegistry.Business.Services;
 using UpcountrySchoolRegistry.Repository;
 
 namespace UpcountrySchoolRegistry.API.Helpers
@@ -15,6 +17,8 @@ namespace UpcountrySchoolRegistry.API.Helpers
         {
             services.AddDbContext<UpcountrySchoolRegistryContext>(options =>
                          options.UseSqlServer(configuration.GetConnectionString("SqlConnection")), ServiceLifetime.Scoped);
+
+            services.AddScoped<ISchoolServices, SchoolServices>();
         }
     }
 }

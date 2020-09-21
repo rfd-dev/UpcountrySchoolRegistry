@@ -9,8 +9,8 @@ namespace UpcountrySchoolRegistry.Business.Contracts.DataAccess
 {
     public interface ISchoolRepository : IRepository<School>
     {
-        List<School> GetSchools(string filter);
-        School GetSchool(int ID);
+        Task<List<School>> GetSchoolsAsync(string filter);
+        Task<School> GetSchoolAsync(int ID);
         School Add(School school);
         void Update(School school);
         void Delete(int ID);

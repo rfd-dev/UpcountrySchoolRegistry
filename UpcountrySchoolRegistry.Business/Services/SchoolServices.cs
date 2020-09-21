@@ -39,14 +39,14 @@ namespace UpcountrySchoolRegistry.Business.Services
             _logger.LogInformation(" colégio cadastrado com o ID {id} foi removido com sucesso", id);
         }
 
-        public School GetSchool(int id)
+        public async Task<School> GetSchoolAsync(int id)
         {
-            return this._schoolRepository.GetSchool(id);
+            return await this._schoolRepository.GetSchoolAsync(id);
         }
 
-        public List<School> GetSchools(string filter)
+        public async Task<List<School>> GetSchoolsAsync(string filter)
         {
-            return this._schoolRepository.GetSchools(filter);
+            return await this._schoolRepository.GetSchoolsAsync(filter);
         }
 
         public async Task UpdateAsync(School school)
