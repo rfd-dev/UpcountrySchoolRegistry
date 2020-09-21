@@ -23,7 +23,7 @@ namespace UpcountrySchoolRegistry.Repository
             //               .Build();
 
             var optionsBuilder = new DbContextOptionsBuilder<UpcountrySchoolRegistryContext>();
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlServer(@"Data Source=MNF007\SQLEXPRESS;Initial Catalog=UpcountrySchoolRegistry;Integrated Security=SSPI;");
 
             return new UpcountrySchoolRegistryContext(optionsBuilder.Options);
         }
