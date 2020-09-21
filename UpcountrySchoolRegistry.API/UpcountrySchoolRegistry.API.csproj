@@ -26,9 +26,5 @@
     <ProjectReference Include="..\UpcountrySchoolRegistry.Repository\UpcountrySchoolRegistry.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DataContracts\Requests\" />
-  </ItemGroup>
-
 
 </Project>

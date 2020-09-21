@@ -35,8 +35,9 @@ namespace UpcountrySchoolRegistry.Repository.Repository
             return await this._context.Schools
                 .AsNoTracking()
                 .Where(school =>
-                    school.Name.Contains(filter, StringComparison.CurrentCultureIgnoreCase)
-                ||  school.Address.Contains(filter, StringComparison.CurrentCultureIgnoreCase))
+                    string.IsNullOrEmpty(filter)
+                || (school.Name.Contains(filter)
+                ||  school.Address.Contains(filter)))
                 .ToListAsync();
         }
 

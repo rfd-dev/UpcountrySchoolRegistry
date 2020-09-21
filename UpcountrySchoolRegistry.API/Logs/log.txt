@@ -281,3 +281,106 @@ System.InvalidOperationException: The LINQ expression 'DbSet<School>
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-21 01:13:49.531 -03:00 [INF] HTTP GET /index.html responded 200 in 195.5720 ms
+2020-09-21 01:13:50.117 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 218.5159 ms
+2020-09-21 01:14:00.664 -03:00 [INF] HTTP GET /api/School responded 200 in 4595.3371 ms
+2020-09-21 01:15:52.228 -03:00 [INF] HTTP GET /index.html responded 200 in 183.7005 ms
+2020-09-21 01:15:52.710 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 173.1025 ms
+2020-09-21 01:16:01.254 -03:00 [INF] HTTP GET /api/School responded 200 in 3742.0465 ms
+2020-09-21 01:16:44.297 -03:00 [INF] HTTP GET /index.html responded 200 in 154.4349 ms
+2020-09-21 01:16:44.671 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 139.3670 ms
+2020-09-21 01:18:05.402 -03:00 [INF] HTTP GET /index.html responded 200 in 158.3421 ms
+2020-09-21 01:18:05.747 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 126.5626 ms
+2020-09-21 01:18:20.970 -03:00 [INF] HTTP GET /api/School?filter=inst responded 200 in 3304.4611 ms
+2020-09-21 01:18:27.472 -03:00 [INF] HTTP GET /api/School responded 200 in 1579.7553 ms
+2020-09-21 01:22:13.203 -03:00 [INF] HTTP GET /index.html responded 200 in 188.1754 ms
+2020-09-21 01:22:13.706 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 177.8193 ms
+2020-09-21 01:22:38.837 -03:00 [INF] HTTP GET /api/School/2 responded 200 in 1719.1836 ms
+2020-09-21 01:22:44.219 -03:00 [INF] HTTP GET /api/School/1 responded 200 in 88.5003 ms
+2020-09-21 01:32:51.515 -03:00 [INF] HTTP GET /index.html responded 200 in 173.2381 ms
+2020-09-21 01:32:51.950 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 161.6122 ms
+2020-09-21 01:33:48.511 -03:00 [INF] HTTP GET /index.html responded 200 in 219.3054 ms
+2020-09-21 01:33:49.058 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 224.1420 ms
+2020-09-21 01:34:41.046 -03:00 [INF] Novo colégio cadastrado com o ID 3
+2020-09-21 01:34:41.074 -03:00 [INF] HTTP POST /api/School responded 200 in 1736.9208 ms
+2020-09-21 01:41:26.010 -03:00 [INF] HTTP GET /index.html responded 200 in 247.6530 ms
+2020-09-21 01:41:26.627 -03:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 187.0724 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/School/{id}" for actions - UpcountrySchoolRegistry.API.Controllers.SchoolController.GetSchoolAsync (UpcountrySchoolRegistry.API),UpcountrySchoolRegistry.API.Controllers.SchoolController.DeleteSchool (UpcountrySchoolRegistry.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2020-09-21 01:41:26.762 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/School/{id}" for actions - UpcountrySchoolRegistry.API.Controllers.SchoolController.GetSchoolAsync (UpcountrySchoolRegistry.API),UpcountrySchoolRegistry.API.Controllers.SchoolController.DeleteSchool (UpcountrySchoolRegistry.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-21 01:41:56.941 -03:00 [INF] HTTP GET /index.html responded 200 in 166.5653 ms
+2020-09-21 01:41:57.465 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 206.7111 ms
+2020-09-21 01:42:16.010 -03:00 [ERR] HTTP PUT /api/School responded 500 in 730.8266 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> School
+System.Object -> UpcountrySchoolRegistry.Business.Domain.School
+   at lambda_method(Closure , Object , School , ResolutionContext )
+   at UpcountrySchoolRegistry.API.Controllers.SchoolController.UpdateSchool(SchoolUpdateRequest schoolUpdateRequest) in D:\Users\rafael.almeida\Source\Repos\rfd-dev\UpcountrySchoolRegistry\UpcountrySchoolRegistry.API\Controllers\SchoolController.cs:line 120
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2020-09-21 01:42:16.152 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> School
+System.Object -> UpcountrySchoolRegistry.Business.Domain.School
+   at lambda_method(Closure , Object , School , ResolutionContext )
+   at UpcountrySchoolRegistry.API.Controllers.SchoolController.UpdateSchool(SchoolUpdateRequest schoolUpdateRequest) in D:\Users\rafael.almeida\Source\Repos\rfd-dev\UpcountrySchoolRegistry\UpcountrySchoolRegistry.API\Controllers\SchoolController.cs:line 120
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-21 01:42:56.803 -03:00 [INF] HTTP GET /index.html responded 200 in 172.4151 ms
+2020-09-21 01:42:57.188 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 145.1345 ms
+2020-09-21 01:43:09.577 -03:00 [INF] Dados do colégio cadastrado com o ID 1 atualizados com sucesso.
+2020-09-21 01:43:09.589 -03:00 [INF] HTTP PUT /api/School responded 200 in 1866.0587 ms
+2020-09-21 01:43:43.215 -03:00 [INF] Dados do colégio cadastrado com o ID 3 atualizados com sucesso.
+2020-09-21 01:43:43.218 -03:00 [INF] HTTP PUT /api/School responded 200 in 73.5736 ms
