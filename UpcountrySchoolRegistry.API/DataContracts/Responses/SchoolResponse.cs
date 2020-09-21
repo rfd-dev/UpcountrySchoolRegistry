@@ -13,7 +13,7 @@ namespace UpcountrySchoolRegistry.API.DataContracts.Responses
         public int ID { get; set; }
 
         /// <example>
-        /// Colégio Santa Clara
+        /// escola Santa Clara
         /// </example>
         public string Name { get; set; }
         

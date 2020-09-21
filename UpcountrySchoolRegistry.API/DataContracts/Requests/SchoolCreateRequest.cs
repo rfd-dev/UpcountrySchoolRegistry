@@ -9,7 +9,7 @@ namespace UpcountrySchoolRegistry.API.DataContracts.Requests
     public class SchoolCreateRequest
     {
         /// <example>
-        /// Colégio Santa Clara
+        /// escola Santa Clara
         /// </example>
         [Required(ErrorMessage="{0} é obrigatório")]
         [MaxLength(255, ErrorMessage = "Tamanho máximo do campo {0}: 255 posições ")]

@@ -31,10 +31,10 @@ namespace UpcountrySchoolRegistry.API.Controllers
         #endregion
 
         /// <summary>
-        /// Obtem uma lista de colegios e permite consulta pelo nome ou endereço.
+        /// Obtem uma lista de escolas e permite consulta pelo nome ou endereço.
         /// </summary>
         /// <remarks>
-        /// Utilize essa chamada para montar a navegação e grid de consulta dos colégios cadastrados.
+        /// Utilize essa chamada para montar a navegação e grid de consulta dos escolas cadastrados.
         /// 
         /// Sample request:
         ///
@@ -50,10 +50,10 @@ namespace UpcountrySchoolRegistry.API.Controllers
         }
 
         /// <summary>
-        /// Obtem os detalhes do colégio solicitado.
+        /// Obtem os detalhes do escola solicitado.
         /// </summary>
         /// <remarks>
-        /// Utilize essa chamada para uma exibição detalhada do colégio.
+        /// Utilize essa chamada para uma exibição detalhada do escola.
         /// 
         /// 
         /// Sample request:
@@ -73,14 +73,14 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// Cria um novo cadastro de escóla.
         /// </summary>
         /// <remarks>
-        /// Utilize essa chamada para a criação de um novo registro de colégio.
+        /// Utilize essa chamada para a criação de um novo registro de escola.
         /// 
         /// 
         /// Sample request:
         ///
         ///     POST /school
         ///     {
-        ///         "Name": "Colégio de Teste 1",
+        ///         "Name": "escola de Teste 1",
         ///         "Address": "Rue de Teste 1"
         ///     }
         ///
@@ -100,7 +100,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// Atualiza os dados de um cadastro de escóla.
         /// </summary>
         /// <remarks>
-        /// Utilize essa chamada para a atualizar os dados de um registro de colégio.
+        /// Utilize essa chamada para a atualizar os dados de um registro de escola.
         /// 
         /// 
         /// Sample request:
@@ -108,7 +108,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         ///     PUT /school
         ///     {
         ///         "ID": 1,
-        ///         "Name": "Colégio de Teste 1",
+        ///         "Name": "escola de Teste 1",
         ///         "Address": "Rue de Teste 1"
         ///     }
         ///
@@ -127,9 +127,9 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// Remove um cadastro de escóla.
         /// </summary>
         /// <remarks>
-        /// Utilize essa chamada para remover os dados de um registro de colégio.
+        /// Utilize essa chamada para remover os dados de um registro de escola.
         /// 
-        /// ATENÇÃO! Esse comando não será executado se o colégio possuir turmas cadastradas.
+        /// ATENÇÃO! Esse comando não será executado se o escola possuir turmas cadastradas.
         /// 
         /// 
         /// Sample request:

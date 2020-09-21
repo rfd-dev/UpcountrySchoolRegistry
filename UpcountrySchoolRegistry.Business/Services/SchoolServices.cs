@@ -27,7 +27,7 @@ namespace UpcountrySchoolRegistry.Business.Services
             School newSchool = this._schoolRepository.Add(school);
             await this._schoolRepository.UnitOfWork.SaveChangesAsync();
 
-            _logger.LogInformation("Novo colégio cadastrado com o ID {id}", newSchool.ID);
+            _logger.LogInformation("Novo escola cadastrado com o ID {id}", newSchool.ID);
             return newSchool;
         }
 
@@ -36,7 +36,7 @@ namespace UpcountrySchoolRegistry.Business.Services
             this._schoolRepository.Delete(id);
             await this._schoolRepository.UnitOfWork.SaveChangesAsync();
 
-            _logger.LogInformation(" colégio cadastrado com o ID {id} foi removido com sucesso", id);
+            _logger.LogInformation(" escola cadastrado com o ID {id} foi removido com sucesso", id);
         }
 
         public async Task<School> GetSchoolAsync(int id)
@@ -54,7 +54,7 @@ namespace UpcountrySchoolRegistry.Business.Services
             this._schoolRepository.Update(school);
             await this._schoolRepository.UnitOfWork.SaveChangesAsync();
 
-            _logger.LogInformation("Dados do colégio cadastrado com o ID {id} atualizados com sucesso.", school.ID);
+            _logger.LogInformation("Dados do escola cadastrado com o ID {id} atualizados com sucesso.", school.ID);
         }
     }
 }

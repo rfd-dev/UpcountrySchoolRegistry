@@ -301,7 +301,7 @@ System.InvalidOperationException: The LINQ expression 'DbSet<School>
 2020-09-21 01:32:51.950 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 161.6122 ms
 2020-09-21 01:33:48.511 -03:00 [INF] HTTP GET /index.html responded 200 in 219.3054 ms
 2020-09-21 01:33:49.058 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 224.1420 ms
-2020-09-21 01:34:41.046 -03:00 [INF] Novo colégio cadastrado com o ID 3
+2020-09-21 01:34:41.046 -03:00 [INF] Novo escola cadastrado com o ID 3
 2020-09-21 01:34:41.074 -03:00 [INF] HTTP POST /api/School responded 200 in 1736.9208 ms
 2020-09-21 01:41:26.010 -03:00 [INF] HTTP GET /index.html responded 200 in 247.6530 ms
 2020-09-21 01:41:26.627 -03:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 187.0724 ms
@@ -380,11 +380,11 @@ System.Object -> UpcountrySchoolRegistry.Business.Domain.School
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-09-21 01:42:56.803 -03:00 [INF] HTTP GET /index.html responded 200 in 172.4151 ms
 2020-09-21 01:42:57.188 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 145.1345 ms
-2020-09-21 01:43:09.577 -03:00 [INF] Dados do colégio cadastrado com o ID 1 atualizados com sucesso.
+2020-09-21 01:43:09.577 -03:00 [INF] Dados do escola cadastrado com o ID 1 atualizados com sucesso.
 2020-09-21 01:43:09.589 -03:00 [INF] HTTP PUT /api/School responded 200 in 1866.0587 ms
-2020-09-21 01:43:43.215 -03:00 [INF] Dados do colégio cadastrado com o ID 3 atualizados com sucesso.
+2020-09-21 01:43:43.215 -03:00 [INF] Dados do escola cadastrado com o ID 3 atualizados com sucesso.
 2020-09-21 01:43:43.218 -03:00 [INF] HTTP PUT /api/School responded 200 in 73.5736 ms
 2020-09-21 01:44:40.698 -03:00 [INF] HTTP GET /index.html responded 200 in 172.4247 ms
 2020-09-21 01:44:41.185 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 182.2456 ms
-2020-09-21 01:45:06.052 -03:00 [INF]  colégio cadastrado com o ID 2 foi removido com sucesso
+2020-09-21 01:45:06.052 -03:00 [INF]  escola cadastrado com o ID 2 foi removido com sucesso
 2020-09-21 01:45:06.066 -03:00 [INF] HTTP DELETE /api/School/2 responded 200 in 1898.1153 ms
