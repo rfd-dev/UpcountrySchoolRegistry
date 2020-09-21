@@ -26,7 +26,7 @@ namespace UpcountrySchoolRegistry.IntegrationTests.e2e
             var client = this._factory.CreateClient();
 
             // Act
-            var response = await client.GetAsync(@"/school");
+            var response = await client.GetAsync(@"/api/school?filter=redac");
 
             // Assert
             response.EnsureSuccessStatusCode();

@@ -38,7 +38,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// 
         /// Sample request:
         ///
-        ///     GET /school?filter=municipal
+        ///     GET /api/school?filter=municipal
         ///
         /// </remarks>        
         [HttpGet]        
@@ -58,7 +58,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// 
         /// Sample request:
         ///
-        ///     GET /school/1
+        ///     GET /api/school/1
         ///
         /// </remarks>        
         [HttpGet("{id}")]
@@ -78,7 +78,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// 
         /// Sample request:
         ///
-        ///     POST /school
+        ///     POST /api/school
         ///     {
         ///         "Name": "escola de Teste 1",
         ///         "Address": "Rue de Teste 1"
@@ -105,7 +105,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// 
         /// Sample request:
         ///
-        ///     PUT /school
+        ///     PUT /api/school
         ///     {
         ///         "ID": 1,
         ///         "Name": "escola de Teste 1",
@@ -134,7 +134,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// 
         /// Sample request:
         ///
-        ///     DELETE /school/1
+        ///     DELETE /api/school/1
         ///
         /// </remarks>     
         [HttpDelete("{id}")]
