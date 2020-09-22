@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -25,9 +26,9 @@ namespace UpcountrySchoolRegistry.IntegrationTests.Helpers
         {
             return new List<School>()
             {
-                new School { Name = "Colégio de Aplicação da UFPE", Address = "Recife" },
-                new School { Name = "Colégio Estadual Waldemiro Pitta", Address = "Cambuci" },
-                new School { Name = "Colégio Estadual Oscar Batista", Address = "Cambuci" }
+                new School { ID = 1, Name = "Colégio de Aplicação da UFPE", Address = "Recife" },
+                new School { ID = 2, Name = "Colégio Estadual Waldemiro Pitta", Address = "Cambuci" },
+                new School { ID = 3, Name = "Colégio Estadual Oscar Batista", Address = "Cambuci" }
             };
         }
     }

@@ -397,3 +397,8 @@ System.Object -> UpcountrySchoolRegistry.Business.Domain.School
 2020-09-21 02:16:43.831 -03:00 [INF] HTTP GET /School responded 404 in 35.4671 ms
 2020-09-21 02:16:54.461 -03:00 [INF] HTTP GET /api/School responded 200 in 5396.8956 ms
 2020-09-21 02:16:54.581 -03:00 [INF] HTTP GET /favicon.ico responded 404 in 25.2296 ms
+2020-09-21 22:34:47.045 -03:00 [INF] HTTP GET /index.html responded 200 in 181.6137 ms
+2020-09-21 22:34:47.175 -03:00 [INF] HTTP GET /swagger-ui-bundle.js responded 304 in 69.8646 ms
+2020-09-21 22:34:47.175 -03:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 304 in 69.9301 ms
+2020-09-21 22:34:47.176 -03:00 [INF] HTTP GET /swagger-ui.css responded 304 in 71.7077 ms
+2020-09-21 22:34:47.845 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 166.2688 ms
