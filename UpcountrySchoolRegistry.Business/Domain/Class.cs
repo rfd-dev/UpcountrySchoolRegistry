@@ -5,10 +5,10 @@ using UpcountrySchoolRegistry.Business.Domain.Base;
 
 namespace UpcountrySchoolRegistry.Business.Domain
 {
-    public class School : Entity
+    public class Class : Entity
     {
         public string Name { get; set; }
-        public string Address { get; set; }
-        public List<Class> Classes { get; set; }
+
+        public School School { get; set; }
     }
 }

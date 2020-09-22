@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UpcountrySchoolRegistry.Repository;
 
 namespace UpcountrySchoolRegistry.Repository.Migrations
 {
     [DbContext(typeof(UpcountrySchoolRegistryContext))]
-    partial class UpcountrySchoolRegistryContextModelSnapshot : ModelSnapshot
+    [Migration("20200922030435_Add-classes")]
+    partial class Addclasses
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

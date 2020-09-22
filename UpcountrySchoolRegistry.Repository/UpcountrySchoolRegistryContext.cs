@@ -12,6 +12,7 @@ namespace UpcountrySchoolRegistry.Repository
     public class UpcountrySchoolRegistryContext : DbContext, IUnitOfWork
     {
         public DbSet<School> Schools { get; set; }
+        public DbSet<Class> Classes { get; set; }
 
         #region Constructor
         public UpcountrySchoolRegistryContext(DbContextOptions<UpcountrySchoolRegistryContext> options) : base(options) { }
@@ -31,6 +32,7 @@ namespace UpcountrySchoolRegistry.Repository
 
             // Configurações Especificas
             modelBuilder.ApplyConfiguration(new SchoolConfiguration());
+            modelBuilder.ApplyConfiguration(new ClassConfiguration());
         }
     }
 }
