@@ -27,7 +27,7 @@ namespace UpcountrySchoolRegistry.IntegrationTests
 
                 services.AddDbContext<UpcountrySchoolRegistryContext>(options =>
                 {
-                    options.UseInMemoryDatabase("InMemoryDb");
+                    options.UseInMemoryDatabase("InMemoryDb"); // TODO: trocar para um LocalDB
                 });
 
                 var sp = services.BuildServiceProvider();
