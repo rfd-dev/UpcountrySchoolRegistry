@@ -26,5 +26,17 @@ namespace UpcountrySchoolRegistry.API.Helpers
             services.AddTransient<ISchoolServices, SchoolServices>();
             services.AddTransient<IClassServices, ClassServices>();
         }
+
+        public static void ConfigureCorsPolicy(this IServiceCollection services)
+        {
+            // CORS Configuration
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
+        }
     }
 }

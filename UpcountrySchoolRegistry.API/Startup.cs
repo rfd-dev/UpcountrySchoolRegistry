@@ -36,6 +36,7 @@ namespace UpcountrySchoolRegistry.API
             services.AddControllers();
             services.CustomizeSwaggerGen(swaggerOptions);            
             services.ConfigureMapper();
+            services.ConfigureCorsPolicy();
             services.ConfigureBusinessServices(Configuration);
         }
 
@@ -61,6 +62,8 @@ namespace UpcountrySchoolRegistry.API
             });
 
             app.UseHttpsRedirection();
+
+            app.UseCors("CorsPolicy");
 
             app.UseRouting();
 
