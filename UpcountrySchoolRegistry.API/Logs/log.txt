@@ -402,3 +402,58 @@ System.Object -> UpcountrySchoolRegistry.Business.Domain.School
 2020-09-21 22:34:47.175 -03:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 304 in 69.9301 ms
 2020-09-21 22:34:47.176 -03:00 [INF] HTTP GET /swagger-ui.css responded 304 in 71.7077 ms
 2020-09-21 22:34:47.845 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 166.2688 ms
+2020-09-22 00:46:40.889 -03:00 [INF] HTTP GET /index.html responded 200 in 243.3504 ms
+2020-09-22 00:46:41.730 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 192.6710 ms
+2020-09-22 00:47:35.454 -03:00 [INF] HTTP GET /index.html responded 200 in 212.2375 ms
+2020-09-22 00:47:35.958 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 175.4315 ms
+2020-09-22 00:50:46.488 -03:00 [ERR] HTTP GET /api/School/1/class/13 responded 500 in 151905.6111 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ClassResponse
+System.Object -> UpcountrySchoolRegistry.API.DataContracts.Responses.ClassResponse
+   at lambda_method(Closure , Object , ClassResponse , ResolutionContext )
+   at UpcountrySchoolRegistry.API.Controllers.ClassController.GetSchoolAsync(Int32 id) in D:\Users\rafael.almeida\Source\Repos\rfd-dev\UpcountrySchoolRegistry\UpcountrySchoolRegistry.API\Controllers\ClassController.cs:line 48
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2020-09-22 00:50:46.570 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> ClassResponse
+System.Object -> UpcountrySchoolRegistry.API.DataContracts.Responses.ClassResponse
+   at lambda_method(Closure , Object , ClassResponse , ResolutionContext )
+   at UpcountrySchoolRegistry.API.Controllers.ClassController.GetSchoolAsync(Int32 id) in D:\Users\rafael.almeida\Source\Repos\rfd-dev\UpcountrySchoolRegistry\UpcountrySchoolRegistry.API\Controllers\ClassController.cs:line 48
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-22 00:57:28.681 -03:00 [INF] HTTP GET /index.html responded 200 in 183.6535 ms
+2020-09-22 00:57:29.187 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 194.3321 ms
+2020-09-22 00:58:06.892 -03:00 [INF] HTTP GET /api/School/1/class/13 responded 200 in 9941.0111 ms
+2020-09-22 00:58:27.149 -03:00 [INF] HTTP GET /api/School/1/class/14 responded 200 in 5110.3416 ms

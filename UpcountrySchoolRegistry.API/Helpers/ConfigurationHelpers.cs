@@ -16,7 +16,6 @@ namespace UpcountrySchoolRegistry.API.Helpers
     {
 		public static void CustomizeSwaggerGen(this IServiceCollection services, SwaggerOptions appSettings)
         {
-            // TODO: Pegar textos do arquivo de configuração
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo

@@ -12,6 +12,8 @@ namespace UpcountrySchoolRegistry.API.MappingProfile
             CreateMap<School, SchoolResponse>();
             CreateMap<SchoolCreateRequest, School>();
             CreateMap<SchoolUpdateRequest, School>();
+
+            CreateMap<Class, ClassResponse>().ForMember(dest => dest.SchoolID, opt => opt.MapFrom(src => src.School.ID));
         }
     }
 }

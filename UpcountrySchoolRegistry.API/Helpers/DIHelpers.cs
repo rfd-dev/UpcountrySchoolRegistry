@@ -21,8 +21,10 @@ namespace UpcountrySchoolRegistry.API.Helpers
                          options.UseSqlServer(configuration["ContextConnectionString"]), ServiceLifetime.Scoped);
 
             services.AddTransient<ISchoolRepository, SchoolRepository>();
+            services.AddTransient<IClassRepository, ClassRepository>();
 
             services.AddTransient<ISchoolServices, SchoolServices>();
+            services.AddTransient<IClassServices, ClassServices>();
         }
     }
 }

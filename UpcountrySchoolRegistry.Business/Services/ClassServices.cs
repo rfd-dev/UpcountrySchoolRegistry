@@ -43,7 +43,7 @@ namespace UpcountrySchoolRegistry.Business.Services
             return await this._classRepository.GetClassesAsync(filter);
         }
 
-        public async Task<Class> GetClassesAsync(int id)
+        public async Task<Class> GetClassAsync(int id)
         {
             return await this._classRepository.GetClassAsync(id);
         }
