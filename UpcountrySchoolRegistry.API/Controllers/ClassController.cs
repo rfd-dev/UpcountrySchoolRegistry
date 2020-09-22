@@ -42,7 +42,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         /// </remarks>        
         [HttpGet]
         [Produces("application/Json")]
-        public async Task<List<ClassResponse>> GetSchoolsAsync(int schoolID, [FromQuery(Name = "filter")] string filter)
+        public async Task<List<ClassResponse>> GetClassesAsync(int schoolID, [FromQuery(Name = "filter")] string filter)
         {
             List<Class> classes = await this._classServices.GetClassesAsync(schoolID, filter);
             return this._mapper.Map<List<ClassResponse>>(classes);
@@ -86,7 +86,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         [HttpPost]
         [Consumes("application/Json")]
         [Produces("application/Json")]
-        public async Task<ClassResponse> CreateSchool(int schoolID, [FromBody] ClassRequest classRequest)
+        public async Task<ClassResponse> CreateClass(int schoolID, [FromBody] ClassRequest classRequest)
         {   
             Class newClass = this._mapper.Map<Class>(classRequest);
             newClass.School = new School { ID = schoolID };
@@ -96,53 +96,51 @@ namespace UpcountrySchoolRegistry.API.Controllers
             return this._mapper.Map<ClassResponse>(newClass);
         }
 
-        ///// <summary>
-        ///// Atualiza os dados de um cadastro de escóla.
-        ///// </summary>
-        ///// <remarks>
-        ///// Utilize essa chamada para a atualizar os dados de um registro de escola.
-        ///// 
-        ///// 
-        ///// Sample request:
-        /////
-        /////     PUT /api/school
-        /////     {
-        /////         "ID": 1,
-        /////         "Name": "escola de Teste 1",
-        /////         "Address": "Rue de Teste 1"
-        /////     }
-        /////
-        ///// </remarks>     
-        //[HttpPut]
-        //[Consumes("application/Json")]
-        //public async Task<OkResult> UpdateSchool([FromBody] SchoolUpdateRequest schoolUpdateRequest)
-        //{
-        //    School newSchool = this._mapper.Map<School>(schoolUpdateRequest);
-        //    await this._schoolServices.UpdateAsync(newSchool);
+        /// <summary>
+        /// Atualiza os dados de um turma.
+        /// </summary>
+        /// <remarks>
+        /// Utilize essa chamada para a atualizar os dados de uma turma.
+        /// 
+        /// 
+        /// Sample request:
+        ///
+        ///     PUT /api/school/1/Class/13
+        ///     {
+        ///         "Name": "Turma Adiada",
+        ///     }
+        ///
+        /// </remarks>     
+        [HttpPut("{id}")]
+        [Consumes("application/Json")]
+        public async Task<OkResult> UpdateClass(int id, int schoolID, [FromBody] ClassRequest classRequest)
+        {
+            Class schoolClass = this._mapper.Map<Class>(classRequest);
+            schoolClass.ID = id;
+            schoolClass.School = new School { ID = schoolID };
 
-        //    return Ok();
-        //}
+            await this._classServices.UpdateAsync(schoolClass);
+            return Ok();
+        }
 
-        ///// <summary>
-        ///// Remove um cadastro de escóla.
-        ///// </summary>
-        ///// <remarks>
-        ///// Utilize essa chamada para remover os dados de um registro de escola.
-        ///// 
-        ///// ATENÇÃO! Esse comando não será executado se o escola possuir turmas cadastradas.
-        ///// 
-        ///// 
-        ///// Sample request:
-        /////
-        /////     DELETE /api/school/1
-        /////
-        ///// </remarks>     
-        //[HttpDelete("{id}")]
-        //[Consumes("application/Json")]
-        //public async Task<OkResult> DeleteSchool(int id)
-        //{
-        //    await this._schoolServices.DeleteAsync(id);
-        //    return Ok();
-        //}
+        /// <summary>
+        /// Remove um turma cadastrada para uma escóla.
+        /// </summary>
+        /// <remarks>
+        /// Utilize essa chamada para remover os dados de uma turma.
+        /// 
+        /// 
+        /// Sample request:
+        ///
+        ///     DELETE /api/school/1/class/13
+        ///
+        /// </remarks>     
+        [HttpDelete("{id}")]
+        [Consumes("application/Json")]
+        public async Task<OkResult> DeleteClass(int id)
+        {
+            await this._classServices.DeleteAsync(id);
+            return Ok();
+        }
     }
 }

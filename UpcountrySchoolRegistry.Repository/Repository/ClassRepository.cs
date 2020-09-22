@@ -54,6 +54,7 @@ namespace UpcountrySchoolRegistry.Repository.Repository
 
         public void Update(Class schoolClass)
         {
+            this._context.Attach(schoolClass.School);
             this._context.Classes.Update(schoolClass);
         }
     }

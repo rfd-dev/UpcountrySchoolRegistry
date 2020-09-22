@@ -1281,3 +1281,13 @@ Error Number:547,State:0,Class:16
 2020-09-22 01:38:05.096 -03:00 [INF] HTTP GET /api/School/1/Class?filter=serie responded 200 in 56.7393 ms
 2020-09-22 01:38:28.592 -03:00 [INF] Novo turma cadastrada com o ID 21
 2020-09-22 01:38:28.601 -03:00 [INF] HTTP POST /api/School/3/Class responded 200 in 5085.0874 ms
+2020-09-22 01:45:15.964 -03:00 [INF] HTTP GET /index.html responded 200 in 250.0625 ms
+2020-09-22 01:45:16.614 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 222.1303 ms
+2020-09-22 01:46:37.375 -03:00 [INF] HTTP GET /index.html responded 200 in 247.2308 ms
+2020-09-22 01:46:37.988 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 223.5565 ms
+2020-09-22 01:47:20.866 -03:00 [INF] Dados da turma cadastrada com o ID 19 atualizados com sucesso.
+2020-09-22 01:47:22.646 -03:00 [INF] HTTP PUT /api/School/1/Class/19 responded 200 in 7241.5385 ms
+2020-09-22 01:48:03.062 -03:00 [INF] Dados da turma cadastrada com o ID 19 atualizados com sucesso.
+2020-09-22 01:48:03.067 -03:00 [INF] HTTP PUT /api/School/1/Class/19 responded 200 in 2579.2597 ms
+2020-09-22 01:48:39.411 -03:00 [INF]  Turma cadastrada com o ID 19 foi removida com sucesso
+2020-09-22 01:48:39.417 -03:00 [INF] HTTP DELETE /api/School/1/Class/19 responded 200 in 89.9580 ms
