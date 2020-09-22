@@ -38,9 +38,9 @@ namespace UpcountrySchoolRegistry.Business.Services
             _logger.LogInformation(" Turma cadastrada com o ID {id} foi removida com sucesso", id);
         }
 
-        public async Task<List<Class>> GetClassesAsync(string filter)
+        public async Task<List<Class>> GetClassesAsync(int schoolID, string filter)
         {
-            return await this._classRepository.GetClassesAsync(filter);
+            return await this._classRepository.GetClassesAsync(schoolID, filter);
         }
 
         public async Task<Class> GetClassAsync(int id)

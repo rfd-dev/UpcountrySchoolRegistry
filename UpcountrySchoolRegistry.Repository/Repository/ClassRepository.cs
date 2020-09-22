@@ -25,6 +25,7 @@ namespace UpcountrySchoolRegistry.Repository.Repository
 
         public Class Add(Class schoolClass)
         {
+            this._context.Attach(schoolClass.School);
             return this._context.Classes.Add(schoolClass).Entity;
         }
 
@@ -41,12 +42,13 @@ namespace UpcountrySchoolRegistry.Repository.Repository
                 .SingleOrDefaultAsync(c => c.ID == id);
         }
 
-        public async Task<List<Class>> GetClassesAsync(string filter)
+        public async Task<List<Class>> GetClassesAsync(int schoolID, string filter)
         {
             return await this._context.Classes
                 .Include(p => p.School)
                 .AsNoTracking()
-                .Where(c => string.IsNullOrEmpty(filter) || c.Name.Contains(filter))
+                .Where(c => c.School.ID == schoolID
+                    && (string.IsNullOrEmpty(filter) || c.Name.Contains(filter)))
                 .ToListAsync();
         }
 

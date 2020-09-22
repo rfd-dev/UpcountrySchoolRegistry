@@ -9,7 +9,7 @@ namespace UpcountrySchoolRegistry.Business.Contracts.DataAccess
 {
     public interface IClassRepository : IRepository<Class>
     {
-        Task<List<Class>> GetClassesAsync(string filter);
+        Task<List<Class>> GetClassesAsync(int schoolID, string filter);
         Task<Class> GetClassAsync(int ID);
         Class Add(Class schoolClass);
         void Update(Class schoolClass);
