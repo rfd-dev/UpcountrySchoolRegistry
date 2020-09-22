@@ -33,6 +33,7 @@ namespace UpcountrySchoolRegistry.Repository.Repository
         public async Task<List<School>> GetSchoolsAsync(string filter)
         {
             return await this._context.Schools
+                .Include(c => c.Classes)
                 .AsNoTracking()
                 .Where(school =>
                     string.IsNullOrEmpty(filter)
@@ -43,7 +44,10 @@ namespace UpcountrySchoolRegistry.Repository.Repository
 
         public async Task<School> GetSchoolAsync(int id)
         {
-            return await this._context.Schools.AsNoTracking().SingleOrDefaultAsync(school => school.ID == id);
+            return await this._context.Schools
+                .Include(c => c.Classes)
+                .AsNoTracking()
+                .SingleOrDefaultAsync(school => school.ID == id);
         }
 
         public void Update(School school)
