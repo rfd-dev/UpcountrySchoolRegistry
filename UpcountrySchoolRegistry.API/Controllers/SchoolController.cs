@@ -88,7 +88,7 @@ namespace UpcountrySchoolRegistry.API.Controllers
         [HttpPost]
         [Consumes("application/Json")]
         [Produces("application/Json")]
-        public async Task<SchoolResponse> CreateSchool([FromBody]SchoolCreateRequest schoolCreateRequest)
+        public async Task<SchoolResponse> CreateSchool([FromBody]SchoolRequest schoolCreateRequest)
         {
             School newSchool = this._mapper.Map<School>(schoolCreateRequest);
             newSchool = await this._schoolServices.AddAsync(newSchool);
@@ -113,13 +113,14 @@ namespace UpcountrySchoolRegistry.API.Controllers
         ///     }
         ///
         /// </remarks>     
-        [HttpPut]
+        [HttpPut("{id}")]
         [Consumes("application/Json")]
-        public async Task<OkResult> UpdateSchool([FromBody] SchoolUpdateRequest schoolUpdateRequest)
+        public async Task<OkResult> UpdateSchool(int id, [FromBody] SchoolRequest schoolUpdateRequest)
         {
-            School newSchool = this._mapper.Map<School>(schoolUpdateRequest);
-            await this._schoolServices.UpdateAsync(newSchool);
+            School school = this._mapper.Map<School>(schoolUpdateRequest);
+            school.ID = id;
 
+            await this._schoolServices.UpdateAsync(school);
             return Ok();
         }
 

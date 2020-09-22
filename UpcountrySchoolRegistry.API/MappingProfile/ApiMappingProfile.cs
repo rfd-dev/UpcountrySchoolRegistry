@@ -10,8 +10,7 @@ namespace UpcountrySchoolRegistry.API.MappingProfile
         public ApiMappingProfile()
         {
             CreateMap<School, SchoolResponse>();
-            CreateMap<SchoolCreateRequest, School>();
-            CreateMap<SchoolUpdateRequest, School>();
+            CreateMap<SchoolRequest, School>();            
 
             CreateMap<ClassRequest, Class>();//.ForPath(dest => dest.School.ID, opt => opt.MapFrom(src => src.SchoolID));
             CreateMap<Class, ClassResponse>().ForMember(dest => dest.SchoolID, opt => opt.MapFrom(src => src.School.ID));

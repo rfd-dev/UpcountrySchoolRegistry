@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UpcountrySchoolRegistry.API.DataContracts.Requests
 {
-    public class SchoolCreateRequest
+    public class SchoolRequest
     {
         /// <example>
         /// escola Santa Clara

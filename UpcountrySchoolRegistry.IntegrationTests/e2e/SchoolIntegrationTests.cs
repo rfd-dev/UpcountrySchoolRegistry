@@ -17,8 +17,9 @@ using UpcountrySchoolRegistry.IntegrationTests.Helpers;
 using UpcountrySchoolRegistry.Repository;
 using Xunit;
 
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
 namespace UpcountrySchoolRegistry.IntegrationTests.e2e
-{
+{    
     public class SchoolIntegrationTests : IClassFixture<InMemoryDbWebApplicationFactory<UpcountrySchoolRegistry.API.Startup>>
     {        
         private readonly InMemoryDbWebApplicationFactory<Startup> _factory;
@@ -93,7 +94,7 @@ namespace UpcountrySchoolRegistry.IntegrationTests.e2e
         public async Task PostAsync_SubmiteNovaEscola_RecebeEntityPreenchida()
         {
             // Arrange
-            var newSchool = new SchoolCreateRequest
+            var newSchool = new SchoolRequest
             {
                 Name = "Escola Santa Clara",
                 Address = "Rua Sete de Setembro, 79"
@@ -116,9 +117,8 @@ namespace UpcountrySchoolRegistry.IntegrationTests.e2e
         public async Task PutAsync_AtualizaEscola_RecebeDadosAtualizados()
         {
             // Arrange
-            var newSchool = new SchoolUpdateRequest
+            var newSchool = new SchoolRequest
             {
-                ID = 2,
                 Name = "Escola REDACTED",
                 Address = "REDACTED"
             };
@@ -126,7 +126,7 @@ namespace UpcountrySchoolRegistry.IntegrationTests.e2e
             var postContent = new StringContent(serializedBody, Encoding.UTF8, "application/json");
 
             // Act
-            var response = await client.PutAsync($"/api/school/", postContent);
+            var response = await client.PutAsync($"/api/school/2", postContent);
 
             // Assert
             response.EnsureSuccessStatusCode();
